@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+NAUBank - Інтернет-банк
+NAUBank - це веб-сайт, що надає повний функціонал онлайн-банкінгу. З ним користувачі можуть здійснювати різноманітні операції зі своїми банківськими рахунками, включаючи переказ коштів, перегляд історії транзакцій та багато іншого.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Основні функції
+Авторизація і аутентифікація: Користувачі можуть увійти в систему за допомогою свого ідентифікатора користувача та пароля.
 
-## Available Scripts
+Переказ коштів: Можливість переказу коштів між різними рахунками, нашого банку.
 
-In the project directory, you can run:
+Історія транзакцій: Зручний перегляд історії всіх проведених транзакцій.
 
-### `npm start`
+Технології
+NAUBank побудований з використанням сучасних технологій веб-розробки. Основні компоненти включають:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Frontend: Використання HTML, CSS(SCSS) та JavaScript(TS) для створення інтерфейсу користувача.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Backend: Веб-сервер на базі Node.js, використання Express.js для обробки запитів та взаємодії з базою даних.
 
-### `npm test`
+База даних: Використання MySQL для зберігання інформації про користувачів, їх рахунки та транзакції.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Інструкції щодо розгортання
+Для розгортання NAUBank на вашому локальному сервері, виконайте наступні кроки:
 
-### `npm run build`
+Клонуйте репозиторій з GitHub: git clone https://github.com/your_username/NAUBank.git
+Запустіть сервер за допомогою команди npm start.
+Відкрийте браузер та перейдіть за адресою http://localhost:3000 для доступу до додатку.
+Для розгортання на виробничому сервері, будь ласка, перегляньте документацію з розгортання Node.js додатків.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Внесення вкладу
+Якщо ви хочете внести вклад у вдосконалення NAUBank, будемо раді вашій допомозі. Просто створіть pull request і ми розглянемо ваші зміни.
