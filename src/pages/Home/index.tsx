@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss"
 import BackgroundTop from "../../images/AbstractDesign_2.png"
 import {Tick} from "../../images/icons/tick";
+import Convertor from "../../components/Converter";
 export const Home = () => {
     return(
         <div className = "home">
@@ -20,7 +21,7 @@ export const Home = () => {
                         <button>Open Account</button>
                     </div>
                     <div className = "">
-
+                        <Convertor/>
                     </div>
                 </div>
             </div>
