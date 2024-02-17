@@ -49,24 +49,26 @@ function Convertor() {
     const fromAmount = amountInFromCurrency ? amount / exchangeRate : amount;
 
     return (
-        <>
-            <h1>Convert</h1>
-            <CurrencyRow
-                currencyOptions={currencyOptions}
-                selectedCurrency={toCurrency}
-                onChangeCurrency={(e: React.ChangeEvent<HTMLSelectElement>) => setToCurrency(e.target.value)}
-                onChangeAmount={handleFromAmountChange}
-                amount={toAmount}
-            />
-            <div className="equals">=</div>
-            <CurrencyRow
-                currencyOptions={currencyOptions}
-                selectedCurrency={fromCurrency}
-                onChangeCurrency={(e: React.ChangeEvent<HTMLSelectElement>) => setFromCurrency(e.target.value)}
-                onChangeAmount={handleToAmountChange}
-                amount={fromAmount}
-            />
-        </>
+        <div className = "currency_row">
+            <div>
+                <CurrencyRow
+                    currencyOptions={currencyOptions}
+                    selectedCurrency={toCurrency}
+                    onChangeCurrency={(e: React.ChangeEvent<HTMLSelectElement>) => setToCurrency(e.target.value)}
+                    onChangeAmount={handleFromAmountChange}
+                    amount={toAmount}
+                />
+            </div>
+            <div>
+                <CurrencyRow
+                    currencyOptions={currencyOptions}
+                    selectedCurrency={fromCurrency}
+                    onChangeCurrency={(e: React.ChangeEvent<HTMLSelectElement>) => setFromCurrency(e.target.value)}
+                    onChangeAmount={handleToAmountChange}
+                    amount={fromAmount}
+                />
+            </div>
+        </div>
     );
 }
 

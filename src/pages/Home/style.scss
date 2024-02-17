@@ -1,50 +1,105 @@
 .home{
   width: 80vw;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .home_background{
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  display: none;
+  width: 65%;
+  z-index: -1;
 }
 .welcome{
   margin-top: 100px;
-}
-//////////////////////////////
-.tick{
-  background-color: #262626;
-  fill: #CAFF33;
   display: flex;
-  align-items: center;
-  p{
-    color: #FFFFFF;
-    margin-left: 20px;
-    font-size: 1.5vw;
+  flex-direction: row;
+  justify-content: space-between;
+  &_title{
+    width: 50%;
   }
-  width: fit-content;
-  border-radius: 2vw;
-  padding: 0 15px;
+  .tick{
+    background-color: #262626;
+    fill: #CAFF33;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 2vw;
+    padding: 0 15px;
+    p{
+      color: #FFFFFF;
+      margin-left: 20px;
+      font-size: 1.5vw;
+    }
+  }
+  .title{
+    h1{
+      color: #FFFFFF;
+      font-size: 3vw;
+    }
+    p{
+      color: #E3E3E7;
+      font-size: 1.5vw;
+    }
+    span{
+      color: #CAFF33;
+    }
+    button{
+      background-color: #CAFF33;
+      border-radius: 3vw;
+      padding: 20px;
+      font-size: 2vw;
+      border: none;
+    }
+  }
 }
-//////////////////////////////
-.title{
-  h1{
-    color: #FFFFFF;
-    font-size: 3vw;
-  }
+
+//////////////////////////////////
+.welcome_transactions{
+  width: 400px;
+}
+.welcome_convertor{
+  position: relative;
+  //width: 35%;
+}
+.arrows_img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.welcome_transactions{
+  position: relative;
+  padding: 40px;
+  background-color: #1A1A1A;
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  border-radius: 1vw;
   p{
-    color: #E3E3E7;
-    font-size: 1.5vw;
+    color: #FFFFFF;
   }
-  span{
-    color: #CAFF33;
+  &:after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    z-index: -1;
+    inset: -1px;
+    background: repeating-conic-gradient(from var(--a), #465029 0%, #465029 5%,
+            transparent 5%, transparent 5%, transparent 40%, #465029 50%);
+    animation: animate 10s linear infinite;
   }
-  button{
-    background-color: #CAFF33;
-    border-radius: 3vw;
-    padding: 20px;
-    font-size: 2vw;
-    border: none;
+}
+@property --a{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes animate {
+  0%{
+    --a: 0deg;
+  }
+  100%{
+    --a: 360deg
   }
 }
