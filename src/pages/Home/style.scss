@@ -55,9 +55,6 @@
 }
 
 //////////////////////////////////
-.welcome_transactions{
-  width: 400px;
-}
 .welcome_convertor{
   position: relative;
   //width: 35%;
@@ -69,15 +66,43 @@
   z-index: -1;
 }
 .welcome_transactions{
+  width: 30vw;
+  height: fit-content;
+  margin: 0 auto;
   position: relative;
-  padding: 40px;
+  padding: 30px;
   background-color: #1A1A1A;
   display: flex;
-  height: 400px;
   flex-direction: column;
   border-radius: 1vw;
+  .monthly_income{
+    position: absolute;
+    height: 5vw;
+    top: -7%;
+    left: -12%;
+  }
+  .currency_row{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .supported_currency{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #22251B;
+    justify-content: space-between;
+    border-radius: 2vw;
+    padding: 1px 1vw;
+    img{
+      height: 3.5vw;
+    }
+  }
   p{
     color: #FFFFFF;
+    font-size: 1vw;
   }
   &:after{
     content: "";
@@ -90,6 +115,10 @@
     animation: animate 10s linear infinite;
   }
 }
+
+
+
+
 @property --a{
   syntax: "<angle>";
   inherits: false;
