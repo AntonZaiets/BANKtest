@@ -63,7 +63,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 .welcome_transactions{
   width: 30vw;
@@ -87,6 +87,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    border-radius: 50%;
   }
   .supported_currency{
     margin-top: 20px;

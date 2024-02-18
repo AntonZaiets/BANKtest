@@ -50,7 +50,7 @@ function Convertor() {
 
     return (
         <div className = "currency_row">
-            <div>
+            <div className = "first_currency">
                 <CurrencyRow
                     currencyOptions={currencyOptions}
                     selectedCurrency={toCurrency}
@@ -59,7 +59,7 @@ function Convertor() {
                     amount={toAmount}
                 />
             </div>
-            <div>
+            <div className = "second_currency">
                 <CurrencyRow
                     currencyOptions={currencyOptions}
                     selectedCurrency={fromCurrency}

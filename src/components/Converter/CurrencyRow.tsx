@@ -10,7 +10,7 @@ interface Props {
 
 const CurrencyRow: React.FC<Props> = ({ currencyOptions, selectedCurrency, onChangeCurrency, onChangeAmount, amount }) => {
     return (
-        <div>
+        <div className = "forms">
             <input type="number" className="input" value={amount} onChange={onChangeAmount} />
             <select value={selectedCurrency} onChange={onChangeCurrency}>
                 {currencyOptions.map(option => (
