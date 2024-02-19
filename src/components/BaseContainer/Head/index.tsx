@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./style.scss"
 import {Logo} from "../../../images/icons/logo";
 import {Menu} from "../../../images/icons/menu";
+import {Link} from "react-router-dom";
 
 export const Head = () => {
     const [isOpen, setOpen] = useState(false);
@@ -13,10 +14,10 @@ export const Head = () => {
             </div>
             <nav className={`header__nav ${isOpen ? "active" : ""}`}>
                 <ul className="header__nav-list">
-                    <li className="header__nav-item">Home</li>
-                    <li className="header__nav-item">Careers</li>
-                    <li className="header__nav-item">About</li>
-                    <li className="header__nav-item">Security</li>
+                    <Link className = "link" to = "/"><li className="header__nav-item">Home</li></Link>
+                    <Link className = "link" to = "/careers"><li className="header__nav-item">Careers</li></Link>
+                    <Link className = "link" to = "/about"><li className="header__nav-item">About</li></Link>
+                    <Link className = "link" to = "/security"><li className="header__nav-item">Security</li></Link>
                 </ul>
                 <ul className = "header__login-list">
                     <li className="header__login-item">Login</li>

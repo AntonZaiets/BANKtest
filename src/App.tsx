@@ -1,22 +1,22 @@
 import React from 'react';
 import {Head} from "./components/BaseContainer/Head"
-import {NavLink} from "react-router-dom";
-import { Routes as Link } from "./constants/routes";
 import {About} from "./pages/About";
 import {Footer} from "./components/BaseContainer/Footer";
 import {Home} from "./pages/Home";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
-const routes = [
-
-]
 function App() {
     return (
-        <div>
+        <Router>
             <Head/>
-            {/*<About/>*/}
-            <Home/>
-            {/*<Footer/>*/}
-        </div>
+            <div>
+                <Routes>
+                    <Route path = "/" element ={<Home/>}/>
+                    <Route path = "/about" element ={<About/>}/>
+                </Routes>
+            </div>
+            <Footer/>
+        </Router>
     );
 
 }
