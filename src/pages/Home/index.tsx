@@ -2,11 +2,11 @@ import React from "react";
 import "./style.scss"
 import BackgroundTop from "../../images/AbstractDesign_2.png"
 import {Tick} from "../../images/icons/tick";
-import Arrows from "../../images/AbstractDesign_3.png"
 import Transactions from "../../images/Transactions.png"
 import SupportedCurrency from "../../images/SupportedCurrency.png"
 import MonthlyIncome from "../../images/MonthlyIncome.png"
 import Convertor from "../../components/Converter";
+import {OurProducts} from "../../components/OurProducts";
 export const Home = () => {
     return(
         <div className = "home">
@@ -27,7 +27,6 @@ export const Home = () => {
                 </div>
                 <div className="welcome_convertor">
                     <div className="welcome_transactions">
-                        {/*<img className="arrows_img" src={Arrows} alt=""/>*/}
                         <img className = "monthly_income" src = {MonthlyIncome} alt = ""/>
                         <p>Your Transactions</p>
                         <img className="transactins" src={Transactions} alt=""/>
@@ -42,6 +41,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
+            <OurProducts/>
         </div>
     );
 }
