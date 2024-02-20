@@ -10,13 +10,14 @@ interface Props {
 
 const CurrencyRow: React.FC<Props> = ({ currencyOptions, selectedCurrency, onChangeCurrency, onChangeAmount, amount }) => {
     return (
-        <div className = "forms">
-            <input type="number" className="input" value={amount} onChange={onChangeAmount} />
-            <select value={selectedCurrency} onChange={onChangeCurrency}>
+        <div className="forms">
+            <input type="number" className="input" value={amount} onChange={onChangeAmount}/>
+            <select value={selectedCurrency} onChange={onChangeCurrency} style={{ backgroundImage: `url(https://flagsapi.com/${selectedCurrency.substring(0, 2)}/flat/64.png)` }}>
                 {currencyOptions.map(option => (
-                    <option key={option} value={option}>{option}</option>
+                    <option key={option} value={option} >{option}</option>
                 ))}
             </select>
+
         </div>
     );
 }
