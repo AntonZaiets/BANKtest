@@ -1,5 +1,5 @@
 .use_cases{
-  margin: 300px 0;
+  display: flex;
   h1{
     color: #CAFF33;
   }
@@ -7,27 +7,59 @@
     color: #B3B3B3;
   }
   &_icons{
+    background-image: url("../../images/AbstractDesign.png");
+    background-repeat: no-repeat;
+    background-size: 25vw;
+    background-position: right;
     background-color: #1C1C1C;
-    width: 40vw;
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 120vw;
+    padding: 2vw;
     position: relative;
     justify-content: space-between;
+    border-radius: 1vw;
+    display: grid;
+    grid-template-columns: 45% 45%;
     .icon_block{
-      width: 40%;
-      position: inherit;
+      border: 1px solid #262626;
+      border-radius: 1vw;
+      width: 100%;
       display: flex;
+      text-align: center;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       background-color: #191919;
-      height: fit-content;
-      .icon{}
+      height: 10vw;
+      .icon{
+        img{
+          filter: drop-shadow(0 0 5px #CAFF33);
+        }
+      }
       .title{
+        flex-wrap: wrap;
+        display: flex;
         p{
           color: #FFFFFF;
         }
+      }
+    }
+  }
+  .use_cases__title{
+    margin-left: 30px;
+    .description{
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      .percent{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+      }
+      .percent:first-child{
+        padding-left: 0;
+      }
+      .border{
+        border-left: 1px solid #262626;
+        border-right: 1px solid #262626;
       }
     }
   }
