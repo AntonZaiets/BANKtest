@@ -1,0 +1,34 @@
+.our_features{
+  margin-bottom: 100px;
+  &__buttons{
+    width: fit-content;
+    height: fit-content;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vw;
+    button{
+      width: 12vw;
+      padding: 1vw;
+      border-radius: 2vw;
+      font-size: 1.2vw;
+      margin: 20px;
+      border: 1px solid #262626;
+      background-color: #1C1C1C;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+    .active{
+      background-color: #191919;
+      color: #CAFF33;
+    }
+    .active{
+      background-color: #191919;
+      color: #CAFF33;
+    }
+    .active{
+      background-color: #191919;
+      color: #CAFF33;
+    }
+  }
+}
