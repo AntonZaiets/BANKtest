@@ -8,6 +8,7 @@ import MonthlyIncome from "../../images/MonthlyIncome.png"
 import Convertor from "../../components/Converter";
 import {OurProducts} from "../../components/OurProducts";
 import {UseCases} from "../../components/UseCases";
+import {OurFeatures} from "../../components/OurFeatures";
 export const Home = () => {
     return(
         <div className = "home">
@@ -44,6 +45,7 @@ export const Home = () => {
             </div>
             <OurProducts/>
             <UseCases/>
+            <OurFeatures/>
         </div>
     );
 }
