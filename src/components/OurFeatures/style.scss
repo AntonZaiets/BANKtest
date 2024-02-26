@@ -1,5 +1,7 @@
 .our_features{
   margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 20% 80%;
   &__buttons{
     width: fit-content;
     height: fit-content;
@@ -7,6 +9,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 1vw;
+    margin-top: 1vw;
     button{
       width: 12vw;
       padding: 1vw;
@@ -17,18 +20,84 @@
       background-color: #1C1C1C;
       color: #FFFFFF;
       cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover{
+      color: #CAFF33;
+
     }
     .active{
       background-color: #191919;
       color: #CAFF33;
+      border: 1px solid #CAFF33;
     }
-    .active{
-      background-color: #191919;
-      color: #CAFF33;
+  }
+  &__cards{
+    position: relative;
+    .online_banking{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      opacity: 1;
+      transition: all 2s ease;
+      position: absolute;
+      top: 0;
     }
-    .active{
-      background-color: #191919;
-      color: #CAFF33;
+    .hiden{
+      opacity: 0;
     }
+    .card{
+      margin: 1vw;
+      padding: 2vw;
+      background-color: #1C1C1C;
+      border: 1px solid #262626;
+      border-radius: 1vw;
+      animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      h1{
+        margin: 0;
+        color: #FFFFFF;
+        font-size: 2vw;
+      }
+      p{
+        color: #B3B3B3;
+        font-size: 1.2vw;
+      }
+      &_head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+          height: fit-content;
+          width: 1.5vw;
+        }
+      }
+    }
+  }
+}
+.active{
+  h1{
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+  p{
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+}
+/*
+@keyframes flip-vertical-left {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+}*/
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(22px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
   }
 }
