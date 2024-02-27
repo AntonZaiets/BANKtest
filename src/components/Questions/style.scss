@@ -1,0 +1,35 @@
+.questions{
+  margin-bottom: 100px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1em;
+  .question{
+    background-color: #191919;
+    border: 1px solid #262626;
+    border-radius: 1vw;
+    padding: 1.0vw 1.5vw;
+    &_title{
+      h1{
+        font-size: 1.5vw;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+      }
+    }
+    &_description{
+      border-top: 1px solid #262626;
+      transition: all 1s ease;
+      p{
+        font-size: 1.2vw;
+        color: #B3B3B3;
+        margin-top: 5px;
+        transition: all 0.8s ease;
+      }
+    }
+  }
+}
+
+.hide{
+  opacity: 0;
+  height: 0;
+}
