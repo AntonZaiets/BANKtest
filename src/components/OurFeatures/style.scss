@@ -1,7 +1,8 @@
 .our_features{
-  margin-bottom: 100px;
+  margin-bottom: 350px;
   display: grid;
   grid-template-columns: 20% 80%;
+  height: fit-content;
   &__buttons{
     width: fit-content;
     height: fit-content;
@@ -44,6 +45,7 @@
     }
     .hiden{
       opacity: 0;
+      height: 0;
     }
     .card{
       margin: 1vw;
