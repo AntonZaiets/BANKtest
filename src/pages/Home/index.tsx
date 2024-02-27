@@ -9,10 +9,11 @@ import Convertor from "../../components/Converter";
 import {OurProducts} from "../../components/OurProducts";
 import {UseCases} from "../../components/UseCases";
 import {OurFeatures} from "../../components/OurFeatures";
+import {Questions} from "../../components/Questions";
 export const Home = () => {
     return(
-        <div className = "home">
-            <img className = "home_background" src = {BackgroundTop} alt = ""/>
+        <div className="home">
+            <img className="home_background" src={BackgroundTop} alt=""/>
             <div className="welcome">
                 <div className="welcome_title">
                     <div className="tick">
@@ -29,15 +30,15 @@ export const Home = () => {
                 </div>
                 <div className="welcome_convertor">
                     <div className="welcome_transactions">
-                        <img className = "monthly_income" src = {MonthlyIncome} alt = ""/>
+                        <img className="monthly_income" src={MonthlyIncome} alt=""/>
                         <p>Your Transactions</p>
                         <img className="transactins" src={Transactions} alt=""/>
                         <div className="money_exchange">
                             <p>Money Exchange</p>
                             <Convertor/>
-                            <div className = "supported_currency">
+                            <div className="supported_currency">
                                 <p>Supported Currency</p>
-                                <img src = {SupportedCurrency} alt = ""/>
+                                <img src={SupportedCurrency} alt=""/>
                             </div>
                         </div>
                     </div>
@@ -45,7 +46,26 @@ export const Home = () => {
             </div>
             <OurProducts/>
             <UseCases/>
-            <OurFeatures/>
+            <div className="test">
+                <h1 style={{color: "#FFFFFF", fontSize: "3vw"}}>Our <span style={{color: "#CAFF33"}}>Features</span>
+                </h1>
+                <p style={{color: "#B3B3B3", fontSize: "1.3vw"}}>
+                    Experience a host of powerful features at YourBank, including seamless online banking, secure
+                    transactions, and personalized financial insights, all designed to enhance your banking experience
+                </p>
+                <OurFeatures/>
+            </div>
+            <div className="test">
+                <h1
+                    style={{color: "#FFFFFF", fontSize: "3vw"}}>
+                    <span style={{color: "#CAFF33"}}>Frequently </span>
+                    Asked Questions
+                </h1>
+                <p style={{color: "#B3B3B3", fontSize: "1.3vw"}}>
+                    Still you have any questions? Contact our Team via support@yourbank.com
+                </p>
+                <Questions/>
+            </div>
         </div>
     );
 }
