@@ -9,6 +9,7 @@
     border: 1px solid #262626;
     border-radius: 1vw;
     padding: 1.0vw 1.5vw;
+
     &_title{
       h1{
         font-size: 1.5vw;
@@ -19,6 +20,7 @@
     &_description{
       border-top: 1px solid #262626;
       transition: all 1s ease;
+      animation: slide-down 1.5s ease;
       p{
         font-size: 1.2vw;
         color: #B3B3B3;
@@ -31,5 +33,15 @@
 
 .hide{
   opacity: 0;
-  height: 0;
+}
+
+@keyframes slide-down {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 100px;
+    opacity: 1;
+  }
 }
