@@ -10,6 +10,7 @@ import {OurProducts} from "../../components/OurProducts";
 import {UseCases} from "../../components/UseCases";
 import {OurFeatures} from "../../components/OurFeatures";
 import {Questions} from "../../components/Questions";
+import {ReviewsSlider} from "../../components/ReviewsSlider";
 export const Home = () => {
     return(
         <div className="home">
@@ -55,17 +56,16 @@ export const Home = () => {
                 </p>
                 <OurFeatures/>
             </div>
-            <div className="test">
-                <h1
-                    style={{color: "#FFFFFF", fontSize: "3vw"}}>
-                    <span style={{color: "#CAFF33"}}>Frequently </span>
-                    Asked Questions
-                </h1>
-                <p style={{color: "#B3B3B3", fontSize: "1.3vw"}}>
-                    Still you have any questions? Contact our Team via support@yourbank.com
-                </p>
-                <Questions/>
-            </div>
+            <h1
+                style={{color: "#FFFFFF", fontSize: "3vw"}}>
+                <span style={{color: "#CAFF33"}}>Frequently </span>
+                Asked Questions
+            </h1>
+            <p style={{color: "#B3B3B3", fontSize: "1.3vw"}}>
+                Still you have any questions? Contact our Team via support@yourbank.com
+            </p>
+            <Questions/>
+            <ReviewsSlider/>
         </div>
     );
 }
