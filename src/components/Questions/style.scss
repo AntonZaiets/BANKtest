@@ -32,16 +32,12 @@
 }
 
 .hide{
+  width: 0;
+  height: 0;
   opacity: 0;
+  p{
+    height: 0;
+  }
 }
 
-@keyframes slide-down {
-  0% {
-    height: 0;
-    opacity: 0;
-  }
-  100% {
-    height: 100px;
-    opacity: 1;
-  }
-}
+
