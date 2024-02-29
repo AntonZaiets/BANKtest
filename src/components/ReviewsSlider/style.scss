@@ -1,0 +1,17 @@
+.reviews_slider{
+  margin-top: 100px;
+  .slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .slide{
+      width: 30vw;
+      text-align: center;
+    }
+    .arrow{
+      width: 20px;
+      height: 20px;
+      fill: #CAFF33;
+    }
+  }
+}
