@@ -11,6 +11,7 @@ import {UseCases} from "../../components/UseCases";
 import {OurFeatures} from "../../components/OurFeatures";
 import {Questions} from "../../components/Questions";
 import {ReviewsSlider} from "../../components/ReviewsSlider";
+import {Banner} from "../../components/Banner";
 export const Home = () => {
     return(
         <div className="home">
@@ -66,6 +67,7 @@ export const Home = () => {
             </p>
             <Questions/>
             <ReviewsSlider/>
+            <Banner/>
         </div>
     );
 }
