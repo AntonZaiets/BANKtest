@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss"
 import CareersImage from "../../images/Careers.png";
 import AbstractImage from "../../images/AbstractDesign.png";
+import {OurValues} from "../../components/OurValues";
 export const Careers = () => {
     return(
         <div className="careers">
@@ -21,7 +22,7 @@ export const Careers = () => {
                 <img className="excellence_img" src={CareersImage} alt=""/>
                 <img className="excellence_abstract" src={AbstractImage} alt=""/>
             </div>
-
+            <OurValues/>
         </div>
     );
 }
