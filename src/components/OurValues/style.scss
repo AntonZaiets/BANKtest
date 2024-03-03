@@ -1,0 +1,26 @@
+.our_values{
+  display: flex;
+  flex-direction: column;
+  &__top{
+    h1{
+      color: #FFFFFF;
+      span{
+        color: #CAFF33;
+      }
+    }
+    p{
+      color: #b3b3b3;
+    }
+  }
+  .values{
+    .value{
+      border-left: 1px solid #CAFF33;
+      h1{
+        color: #4C4C4D;
+      }
+      p{
+        color: #B3B3B3;
+      }
+    }
+  }
+}
