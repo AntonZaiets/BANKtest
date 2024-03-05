@@ -12,13 +12,37 @@ export const OurValues = () => {
                     achieve our goals.
                 </p>
             </div>
-            <div className = "values">
-                <div className = "value">
+            <div className="values">
+                <div className="value">
                     <h1>Integrity</h1>
                     <p>
                         We conduct ourselves with utmost honesty, transparency, and ethical behavior. We
                         believe in doing what is right for our customers, colleagues, and stakeholders, even
                         when faced with difficult choices.
+                    </p>
+                </div>
+                <div className="value">
+                    <h1>Customer Centrality</h1>
+                    <p>
+                        Our customers are at the heart of everything we do. We are dedicated to understanding
+                        their needs, providing personalized solutions, and delivering exceptional service that
+                        exceeds expectations.
+                    </p>
+                </div>
+                <div className="value">
+                    <h1>Collaboration</h1>
+                    <p>
+                        We foster a collaborative and inclusive work environment, where teamwork and diversity are
+                        celebrated. By leveraging the unique strengths and perspectives of our employees, we drive
+                        innovation and achieve greater success together.
+                    </p>
+                </div>
+                <div className="value">
+                    <h1>Innovation</h1>
+                    <p>
+                        We embrace change and constantly seek innovative solutions to meet the evolving needs of our
+                        customers. We encourage our employees to think creatively, challenge conventions, and explore
+                        new ideas to drive the future of banking.
                     </p>
                 </div>
             </div>
