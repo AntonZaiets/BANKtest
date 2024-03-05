@@ -13,9 +13,14 @@
     }
   }
   .values{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5vw;
     .value{
-      border-left: 0.9px solid #CAFF33;
+      border-left: 1px solid #CAFF33;
+      padding-left: 1vw;
       h1{
+        margin-top: 0;
         color: #4C4C4D;
       }
       p{
