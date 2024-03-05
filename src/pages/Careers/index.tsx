@@ -3,6 +3,7 @@ import "./styles.scss"
 import CareersImage from "../../images/Careers.png";
 import AbstractImage from "../../images/AbstractDesign.png";
 import {OurValues} from "../../components/OurValues";
+import {OurBenefits} from "../../components/OurBenefits";
 export const Careers = () => {
     return(
         <div className="careers">
@@ -23,6 +24,7 @@ export const Careers = () => {
                 <img className="excellence_abstract" src={AbstractImage} alt=""/>
             </div>
             <OurValues/>
+            <OurBenefits/>
         </div>
     );
 }
