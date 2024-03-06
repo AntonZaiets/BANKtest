@@ -1,0 +1,48 @@
+.our_benefits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  &__top {
+    h1 {
+      color: #FFFFFF;
+
+      span {
+        color: #CAFF33;
+      }
+    }
+    p {
+      color: #b3b3b3;
+    }
+  }
+  .benefits{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4vw;
+    .benefit{
+      border-radius: 1vw;
+      background-color: #1C1C1C;
+      padding: 3vw;
+      &_title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        h1{
+          margin: 0 0 0 2vw;
+          color: #FFFFFF;
+          font-size: 2vw;
+        }
+        img{
+          filter: drop-shadow(0 0 25px #CAFF33);
+          width: 2vw;
+        }
+      }
+      &_description{
+        p{
+          color: #b3b3b3;
+          font-size: 1.2vw;
+        }
+      }
+    }
+  }
+}
