@@ -4,6 +4,7 @@ import CareersImage from "../../images/Careers.png";
 import AbstractImage from "../../images/AbstractDesign.png";
 import {OurValues} from "../../components/OurValues";
 import {OurBenefits} from "../../components/OurBenefits";
+import {JobOpenings} from "../../components/JobOpenings";
 export const Careers = () => {
     return(
         <div className="careers">
@@ -25,6 +26,7 @@ export const Careers = () => {
             </div>
             <OurValues/>
             <OurBenefits/>
+            <JobOpenings/>
         </div>
     );
 }
