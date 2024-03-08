@@ -24,9 +24,10 @@ export const JobOpenings = () => {
                 <div className="requirements"><Diplomat/><p>Strong analytical and problem-solving skills</p></div>
                 <div className="requirements"><Diplomat/><p>Knowledge of regulatory requirements and industry best
                     practices</p></div>
+                <button>Apply Now</button>
             </div>
             <div className="vacansion">
-                <h1>IT Security Specialist</h1>
+            <h1>IT Security Specialist</h1>
                 <span>Location: Kiev</span>
                 <span>Department: Information Technology</span>
                 <h2>About This Job</h2>
@@ -43,6 +44,7 @@ export const JobOpenings = () => {
                 <div className="requirements"><Diplomat/><p>In-depth knowledge of network security protocols and technologies</p></div>
                 <div className="requirements"><Diplomat/><p>Familiarity with regulatory frameworks such as PCI DSS and GDPR</p></div>
                 <div className="requirements"><Diplomat/><p>Professional certifications such as CISSP or CISM are preferred</p></div>
+                <button>Apply Now</button>
             </div>
         </div>
     );
