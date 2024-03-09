@@ -25,4 +25,15 @@ select {
   appearance: none;
 }
 
+@media(max-width: 774px){
+  .input{
+    width: 30vw;
+    height: 6vw;
+    font-size: 3.5vw;
+  }
+  select{
+    height: 5vw;
+    font-size: 2.5vw;
+  }
+}
 
